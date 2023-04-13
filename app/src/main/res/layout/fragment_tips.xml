@@ -8,6 +8,7 @@
     tools:context=".TipsFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    ////////
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textColor="@color/Green_text"
-                android:text="BEFORE YOU START:"
+                android:text="@string/BEFOREYOUSTART"
                 android:textSize="30dp" />
 
             <FrameLayout
@@ -51,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textColor="@color/Green_text"
-                android:text="DURING WALKING:"
+                android:text="@string/dw"
                 android:textSize="30dp" />
 
             <FrameLayout
@@ -69,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textColor="@color/Green_text"
-                android:text="AFTER WALKING:"
+                android:text="@string/AFTERWALKING"
                 android:textSize="30dp" />
 
             <FrameLayout
@@ -87,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textColor="@color/Green_text"
-                android:text="SCHEDULING:"
+                android:text="@string/SCHEDULING"
                 android:textSize="30dp" />
 
             <FrameLayout
