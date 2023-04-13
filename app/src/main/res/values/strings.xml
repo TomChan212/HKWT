@@ -22,5 +22,8 @@
     <string name="reset">Reset</string>
     <string name="eddi">Edit Profile</string>
     <string name="save">SAVE</string>
+    <string name="introduction">Introduction</string>
+    <string name="hkft">WALKING TRACK</string>
+    <string name="bmi_title">BMI</string>
 
 </resources>
