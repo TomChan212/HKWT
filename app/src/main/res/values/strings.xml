@@ -13,6 +13,16 @@
     <string name="bmi">BMI :</string>
     <string name="enterage">Please enter your age here</string>
 
+    //display
+    <string name="title">Title:</string>
+    <string name="district">District:</string>
+    <string name="route">Route</string>
+    <string name="access">How to access</string>
+    <string name="map">Map</string>
+
+    //inner
+    <string name="inputsearch">Input to search</string>
+
     //activity_login
     <string name="login">Login</string>
     <string name="sig_mess">Not yet registered? Sign Up</string>
@@ -21,7 +31,7 @@
     <string name="logout_mess">Sure Logging Out?</string>
     <string name="logout">Log Out</string>
 
-    //
+    //home
     <string name="reset">Reset</string>
     <string name="eddi">Edit Profile</string>
     <string name="save">SAVE</string>
