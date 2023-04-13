@@ -18,17 +18,5 @@
     <string name="logout_mess">Sure Logging Out?</string>
     <string name="logout">Log Out</string>
 
-    //forget
-    <string name="etem">Enter your email address:</string>
-    <string name="reset">Reset</string>
-
-    //edit profile
-    <string name="eddi">Edit Profile</string>
-    <string name="bmi_title">BMI</string>
-
-    //home
-    <string name="introduction">Introduction</string>
-    <string name="hkft">Fitness Tracks Hong Kong</string>
-    <string name="save">Save</string>
-
+    //
 </resources>
