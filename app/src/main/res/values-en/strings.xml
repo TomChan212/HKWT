@@ -52,9 +52,10 @@
     <string name="eddi">Edit Profile</string>
     <string name="save">SAVE</string>
     <string name="introduction">Introduction</string>
-    <string name="hkft">WALKING TRACKS</string>
+    <string name="hkft">WALKING TRACK</string>
     <string name="bmi_title">BMI</string>
-     //signup
+    //signup
     <string name="signup">Sign Up</string>
     <string name="signup_mess">Already an user? Login</string>
+    <string name="Home">home</string>
 </resources>

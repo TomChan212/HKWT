@@ -1,6 +1,8 @@
 package com.project.hkwt;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +10,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Locale;
 
 public class SettingsActivity extends AppCompatActivity {
     public TextView text_language_selection;
@@ -30,12 +34,12 @@ public class SettingsActivity extends AppCompatActivity {
                 confirm_button.setText("CONFIRM");
                 cancel_button.setText("CANCEL");
                 break;
-            case "sc":
+            case "rCN":
                 text_language_selection.setText("切换语言:");
                 confirm_button.setText("确认");
                 cancel_button.setText("取消");
                 break;
-            case "tc":
+            case "rHK":
                 text_language_selection.setText("轉換語言:");
                 confirm_button.setText("確認");
                 cancel_button.setText("取消");
@@ -48,12 +52,15 @@ public class SettingsActivity extends AppCompatActivity {
                 switch (checkedId){
                     case R.id.lang_en:
                         Settings.setSelection("en");
+                        setLocale("en");
                         break;
                     case R.id.lang_sc:
                         Settings.setSelection("sc");
+                        setLocale("aa");
                         break;
                     case R.id.lang_tc:
                         Settings.setSelection("tc");
+                        setLocale("ab");
                         break;
                 }
             }
@@ -72,5 +79,13 @@ public class SettingsActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    private void setLocale(String lang){
+    Locale locale = new Locale(lang);
+    Locale.setDefault(locale);
+    Resources res = getResources();
+    Configuration conf = res.getConfiguration();
+    conf.locale = locale;
+    res.updateConfiguration(conf, res.getDisplayMetrics());
     }
 }
