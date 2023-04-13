@@ -6,14 +6,17 @@
     <string name="confirm">Confirm</string>
     <string name="cancel">Cancel</string>
 
+    //bmi
     <string name="age">Age :</string>
     <string name="height">Height(cm) :</string>
     <string name="weight">Weight (kg) :</string>
     <string name="bmi">BMI :</string>
+    <string name="enterage">Please enter your age here</string>
 
     //activity_login
     <string name="login">Login</string>
     <string name="sig_mess">Not yet registered? Sign Up</string>
+
     //activity_logout
     <string name="logout_mess">Sure Logging Out?</string>
     <string name="logout">Log Out</string>
