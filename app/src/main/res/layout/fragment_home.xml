@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="20dp"
-                    android:text="Introduction"
+                    android:text="@string/introduction"
                     android:textSize="25sp"
                     />
                 <Button
@@ -38,8 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="20dp"
-                    android:text="Fitness Tracks
-                    Hong Kong "
+                    android:text="@string/hkft"
                     android:textSize="25sp" />
 
                 <Button
@@ -47,7 +46,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="20dp"
-                    android:text="BMI"
+                    android:text="@string/bmi_title"
                     android:textSize="25sp"
                     />
 
@@ -56,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="20dp"
-                    android:text="Logout"
+                    android:text="@string/logout"
                     android:textSize="30sp" />
 
 

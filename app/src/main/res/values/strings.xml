@@ -6,26 +6,17 @@
     <string name="confirm">Confirm</string>
     <string name="cancel">Cancel</string>
 
+    <string name="age">Age :</string>
+    <string name="height">Height(cm) :</string>
+    <string name="weight">Weight (kg) :</string>
+    <string name="bmi">BMI :</string>
+
     //activity_login
     <string name="login">Login</string>
     <string name="sig_mess">Not yet registered? Sign Up</string>
     //activity_logout
     <string name="logout_mess">Sure Logging Out?</string>
     <string name="logout">Log Out</string>
-    //bmi
-    <string name="age">Age :</string>
-    <string name="height">Height(cm) :</string>
-    <string name="weight">Weight (kg) :</string>
-    <string name="bmi">BMI :</string>
-    <string name="submit">submit</string>
-    <string name="enterweight">Please enter your weight here</string>
-    //display
-    <string name="title">Title:</string>
-    <string name="route">Route</string>
-    <string name="howtoaccess">How to access</string>
-    <string name="district">District:</string>
-    <string name="map">Map</string>
-    //inner
-    <string name="inputsearch">Input to search</string>
+
     //
 </resources>
