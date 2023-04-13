@@ -13,6 +13,10 @@
     <string name="bmi">BMI :</string>
     <string name="enterage">Please enter your age here</string>
 
+    //signup
+    <string name="signup">Sign Up</string>
+    <string name="signup_mess">Already an user? Login</string>
+
     //display
     <string name="title">Title:</string>
     <string name="district">District:</string>
