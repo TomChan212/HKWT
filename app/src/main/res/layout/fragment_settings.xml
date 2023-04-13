@@ -16,7 +16,7 @@
             android:textColor="@color/Green_text"
             android:layout_margin="20dp"
             android:textSize="30dp"
-            android:text="Settings" />
+            android:text="@string/Settings"/>
 
         <View
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:textColor="@color/Green_text"
             android:layout_margin="5dp"
             android:textSize="25dp"
-            android:text="Visibility" />
+            android:text="@string/Visibility" />
 
         <View
             android:layout_width="match_parent"
@@ -45,12 +45,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="Dark Mode" />
+            android:text="@string/DarkMode" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Switch from Light Mode into Dark Mode" />
+            android:text="@string/sflmidm" />
 
         <View
             android:layout_width="match_parent"
@@ -85,7 +85,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Switch Language between Chinese and English" />
+            android:text="@string/slbcae" />
 
         <View
             android:layout_width="match_parent"
@@ -103,7 +103,7 @@
             android:layout_margin="5dp"
             android:textColor="@color/black"
             android:textSize="25dp"
-            android:text="LOG OUT" />
+            android:text="@string/LOGOUT" />
 
 
 

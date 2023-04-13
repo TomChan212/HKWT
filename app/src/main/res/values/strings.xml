@@ -1,3 +1,22 @@
 <resources>
-
+<string name="name">name</string>
+<string name="username">username</string>
+<string name="profile">Profile</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Username">Username</string>
+    <string name="password">password</string>
+    <string name="Password">Password</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="Settings">Settings</string>
+    <string name="Visibility">Visibility</string>
+    <string name="DarkMode">Dark Mode</string>
+    <string name="sflmidm">Switch from Light Mode into Dark Mode</string>
+    <string name="LanguageSettings">Language Settings</string>
+    <string name="slbcae">Switch Language between Chinese and English</string>
+    <string name="LOGOUT">LOG OUT</string>
+    <string name="BEFOREYOUSTART">BEFORE YOU START:</string>
+    <string name="dw">DURING WALKING: </string>
+    <string name="AFTERWALKING">AFTER WALKING</string>
+    <string name="SCHEDULING">SCHEDULING:</string>
 </resources>
