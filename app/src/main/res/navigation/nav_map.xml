@@ -40,20 +40,20 @@
     <fragment
         android:id="@+id/tipsFragment"
         android:name="com.project.hkwt.TipsFragment"
-        android:label="fragment_tips"
+        android:label="Introduction"
         tools:layout="@layout/fragment_tips" />
     <activity
         android:id="@+id/settingsActivity"
         android:name="com.project.hkwt.SettingsActivity"
-        android:label="activity_settings"
+        android:label="Settings"
         tools:layout="@layout/activity_settings" />
     <activity
         android:id="@+id/innerActivity"
         android:name="com.project.hkwt.InnerActivity"
-        android:label="InnerActivity" />
+        android:label="Walking Tracks" />
     <activity
         android:id="@+id/logoutActivity"
         android:name="com.project.hkwt.LogoutActivity"
-        android:label="activity_logout"
+        android:label="Logout"
         tools:layout="@layout/activity_logout" />
 </navigation>
