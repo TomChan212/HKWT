@@ -30,12 +30,12 @@ public class SettingsActivity extends AppCompatActivity {
                 confirm_button.setText("CONFIRM");
                 cancel_button.setText("CANCEL");
                 break;
-            case "sc":
+            case "rCN":
                 text_language_selection.setText("切换语言:");
                 confirm_button.setText("确认");
                 cancel_button.setText("取消");
                 break;
-            case "tc":
+            case "rHK":
                 text_language_selection.setText("轉換語言:");
                 confirm_button.setText("確認");
                 cancel_button.setText("取消");

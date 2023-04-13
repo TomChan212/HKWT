@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Home"
+    <item android:title="@string/Home"
         android:id="@+id/homeFragment"
         android:icon="@drawable/baseline_home_24" />
-    <item android:title="Profile"
+    <item android:title="@string/Profile"
         android:id="@+id/profileFragment"
         android:icon="@drawable/baseline_person_24"/>
-    <item android:title="Settings"
+    <item android:title="@string/Settings"
         android:id="@+id/settingsFragment"
         android:icon="@drawable/baseline_settings_24"/>
 </menu>
