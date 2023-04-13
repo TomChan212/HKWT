@@ -23,6 +23,7 @@
     <string name="weight">Weight (kg) :</string>
     <string name="bmi">BMI :</string>
     <string name="submit">submit</string>
+    <string name="enterweight">Please enter your weight here</string>
     ----------------------------------------------------------------display
     <string name="title">Title:</string>
     <string name="route">Route</string>
