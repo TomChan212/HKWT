@@ -1,5 +1,6 @@
 package com.project.hkwt;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -69,7 +70,7 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Settings.setLang(Settings.getSelection());
-                Intent intent = new Intent(SettingsActivity.this, InnerActivity.class);
+                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
