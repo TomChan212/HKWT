@@ -56,11 +56,11 @@ public class SettingsActivity extends AppCompatActivity {
                         break;
                     case R.id.lang_sc:
                         Settings.setSelection("sc");
-                        setLocale("ab");
+                        setLocale("aa");
                         break;
                     case R.id.lang_tc:
                         Settings.setSelection("tc");
-                        setLocale("aa");
+                        setLocale("ab");
                         break;
                 }
             }
