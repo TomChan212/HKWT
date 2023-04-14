@@ -1,7 +1,12 @@
 package com.project.hkwt;
 
+import static android.content.ContentValues.TAG;
+
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,9 +29,12 @@ public class ProfileFragment extends Fragment {
     TextView titleName, titleUsername;
     Button editProfile;
 
+    SharedPreferences sharedPreferences;
+
     public ProfileFragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,11 +63,32 @@ public class ProfileFragment extends Fragment {
     }
 
     public void showAllUserData(){
+
         Intent intent = getActivity().getIntent();
         String nameUser = intent.getStringExtra("name");
         String emailUser = intent.getStringExtra("email");
         String usernameUser = intent.getStringExtra("username");
         String passwordUser = intent.getStringExtra("password");
+
+        if(nameUser != null && emailUser != null && usernameUser != null && passwordUser!= null){
+            sharedPreferences = getActivity().getSharedPreferences("MyPref", 0);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("name", nameUser);
+            editor.putString("email", emailUser);
+            editor.putString("username", usernameUser);
+            editor.putString("password", passwordUser);
+            editor.commit();
+        }else {
+            sharedPreferences = getContext().getSharedPreferences("Mypref", Context.MODE_PRIVATE);
+            nameUser = sharedPreferences.getString("name", "");
+            Log.d(TAG, nameUser);
+            emailUser = sharedPreferences.getString("email", "");
+            Log.d(TAG, emailUser);
+            usernameUser = sharedPreferences.getString("username", "");
+            Log.d(TAG, usernameUser);
+            passwordUser = sharedPreferences.getString("password", "");
+            Log.d(TAG, passwordUser);
+        }
 
         titleName.setText(nameUser);
         titleUsername.setText(usernameUser);
@@ -86,6 +115,11 @@ public class ProfileFragment extends Fragment {
                     String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
                     String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
 
+                    Log.d(TAG, nameFromDB);
+                    Log.d(TAG, emailFromDB);
+                    Log.d(TAG, usernameFromDB);
+                    Log.d(TAG, passwordFromDB);
+
                     Intent intent = new Intent(getActivity(), EditProfileActivity.class);
 
                     intent.putExtra("name", nameFromDB);
@@ -94,7 +128,6 @@ public class ProfileFragment extends Fragment {
                     intent.putExtra("password", passwordFromDB);
 
                     startActivity(intent);
-
                 }
             }
 
