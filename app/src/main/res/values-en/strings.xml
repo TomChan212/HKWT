@@ -32,6 +32,7 @@
     <string name="bmi">BMI :</string>
     <string name="enterage">Please enter your age here</string>
     <string name="enterweight">Please enter your weight here </string>
+    <string name="enterheight">Please enter your height here</string>
     <string name="submit">submit</string>
     //display
     <string name="title">Title:</string>

@@ -68,7 +68,7 @@
                             android:layout_height="48dp"
                             android:layout_marginStart="12dp"
                             android:ems="10"
-                            android:hint="Please enter your height here"
+                            android:hint="@string/enterheight"
                             android:inputType="number"
                             android:translationZ="2dp" />
                 </TableRow>
