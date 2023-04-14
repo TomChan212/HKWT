@@ -38,9 +38,13 @@ public class EditProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (isNameChanged() || isPasswordChanged() || isEmailChanged()){
-                    Toast.makeText(EditProfileActivity.this, "Saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditProfileActivity.this, "Saved, Please Login Again", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
+                    startActivity(intent);
                 } else {
-                    Toast.makeText(EditProfileActivity.this, "No Changes Found", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditProfileActivity.this, "No Changes Found, Please Login Again", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
+                    startActivity(intent);
                 }
             }
         });
