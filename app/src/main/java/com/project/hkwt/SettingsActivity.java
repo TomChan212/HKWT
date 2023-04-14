@@ -70,6 +70,8 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Settings.setLang(Settings.getSelection());
+                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
         cancel_button.setOnClickListener(new View.OnClickListener(){
