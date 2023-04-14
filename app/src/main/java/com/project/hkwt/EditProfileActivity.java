@@ -1,7 +1,9 @@
 package com.project.hkwt;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,10 +52,14 @@ public class EditProfileActivity extends AppCompatActivity {
         });
     }
 
+
     private boolean isNameChanged() {
         if (!nameUser.equals(editName.getText().toString())){
             reference.child(usernameUser).child("name").setValue(editName.getText().toString());
             nameUser = editName.getText().toString();
+            getSharedPreferences("MyPref", MODE_PRIVATE).edit()
+                    .putString("name", nameUser).apply();
+            Log.d("E-Name", nameUser+" changed");
             return true;
         } else {
             return false;
@@ -64,6 +70,9 @@ public class EditProfileActivity extends AppCompatActivity {
         if (!emailUser.equals(editEmail.getText().toString())){
             reference.child(usernameUser).child("email").setValue(editEmail.getText().toString());
             emailUser = editEmail.getText().toString();
+            getSharedPreferences("MyPref", MODE_PRIVATE).edit()
+                    .putString("email", emailUser).apply();
+            Log.d("E-Email", emailUser+" changed");
             return true;
         } else {
             return false;
@@ -75,6 +84,9 @@ public class EditProfileActivity extends AppCompatActivity {
         if (!passwordUser.equals(editPassword.getText().toString())){
             reference.child(usernameUser).child("password").setValue(editPassword.getText().toString());
             passwordUser = editPassword.getText().toString();
+            getSharedPreferences("MyPref", MODE_PRIVATE).edit()
+                    .putString("password", passwordUser).apply();
+            Log.d("E-Password", passwordUser+" changed");
             return true;
         } else {
             return false;
