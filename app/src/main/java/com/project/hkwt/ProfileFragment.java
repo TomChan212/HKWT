@@ -70,7 +70,19 @@ public class ProfileFragment extends Fragment {
         String usernameUser = intent.getStringExtra("username");
         String passwordUser = intent.getStringExtra("password");
 
-        if(nameUser != null && emailUser != null && usernameUser != null && passwordUser!= null){
+        sharedPreferences = getActivity().getSharedPreferences("MyPref", 0);
+        String prefnameUser = sharedPreferences.getString("name", "");
+        String prefemailUser = sharedPreferences.getString("email", "");
+        String prefusernameUser = sharedPreferences.getString("username", "");
+        String prefpasswordUser = sharedPreferences.getString("password", "");
+        Log.d(TAG, prefnameUser);
+
+        if(prefnameUser != null && prefemailUser!= null && prefusernameUser!= null && prefpasswordUser!= null){
+        profileName.setText(prefnameUser);
+        profileEmail.setText(prefemailUser);
+        profileUsername.setText(prefusernameUser);
+        profilePassword.setText(prefpasswordUser);
+        }else{
             sharedPreferences = getActivity().getSharedPreferences("MyPref", 0);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("name", nameUser);
@@ -78,24 +90,13 @@ public class ProfileFragment extends Fragment {
             editor.putString("username", usernameUser);
             editor.putString("password", passwordUser);
             editor.commit();
-        }else {
-            sharedPreferences = getContext().getSharedPreferences("Mypref", Context.MODE_PRIVATE);
-            nameUser = sharedPreferences.getString("name", "");
-            Log.d(TAG, nameUser);
-            emailUser = sharedPreferences.getString("email", "");
-            Log.d(TAG, emailUser);
-            usernameUser = sharedPreferences.getString("username", "");
-            Log.d(TAG, usernameUser);
-            passwordUser = sharedPreferences.getString("password", "");
-            Log.d(TAG, passwordUser);
+            titleName.setText(nameUser);
+            titleUsername.setText(usernameUser);
+            profileName.setText(nameUser);
+            profileEmail.setText(emailUser);
+            profileUsername.setText(usernameUser);
+            profilePassword.setText(passwordUser);
         }
-
-        titleName.setText(nameUser);
-        titleUsername.setText(usernameUser);
-        profileName.setText(nameUser);
-        profileEmail.setText(emailUser);
-        profileUsername.setText(usernameUser);
-        profilePassword.setText(passwordUser);
     }
 
     public void passUserData(){
